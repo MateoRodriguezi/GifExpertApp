@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from "react";
-import { AddCategory } from './components/AddCategory';
-import { GiftGrid } from './components/GiftGrid';
+import { AddCategory, GiftGrid} from './components';
 
 export const GiftExpertApp = () => {
 
@@ -10,7 +9,6 @@ export const GiftExpertApp = () => {
     const onAddCategory = (newCategory) => {
 
         if (categories.includes(newCategory) ) return;
-
         setCategories ( [newCategory, ...categories ] );
 
     }
